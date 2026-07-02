@@ -1,0 +1,23 @@
+﻿# environments
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# large data
+data/
+datasets/
+checkpoints/
+outputs/
+wandb/
+lerobot_cache/
+
+# model weights
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+
+# system
+.DS_Store

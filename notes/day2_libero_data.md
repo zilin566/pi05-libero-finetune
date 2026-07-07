@@ -13,6 +13,17 @@ openvla/modified_libero_rlds
 → pi05_libero
 → train.py
 
+
+pi05_libero 是 openpi 中用于 π0.5 + LIBERO 的训练配置
+它读取 physical-intelligence/libero
+模型是 pi0.Pi0Config(pi05=True)
+输入是 image + wrist_image + state + task
+输出是 actions
+action_horizon = 10
+默认 batch_size = 256
+默认训练 30000 steps
+
+
 ## 2. 数据转化脚本
 脚本位置：
 examples/libero/convert_libero_data_to_lerobot.py
@@ -75,4 +86,3 @@ pi05_libero配置
 LeRobot 不是模型，而是机器人数据格式。
 LIBERO 原始数据先转成 LeRobot 格式。
 π0.5 训练时读取 image、wrist_image、state、task，然后预测 actions。
-

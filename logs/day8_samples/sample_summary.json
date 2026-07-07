@@ -1,0 +1,272 @@
+[
+  {
+    "index": 0,
+    "keys": [
+      "image",
+      "wrist_image",
+      "state",
+      "actions",
+      "timestamp",
+      "frame_index",
+      "episode_index",
+      "index",
+      "task_index"
+    ],
+    "fields": {
+      "image": {
+        "type": "PngImageFile",
+        "preview": "<PIL.PngImagePlugin.PngImageFile image mode=RGB size=256x256 at 0x7F7247B762D0>"
+      },
+      "wrist_image": {
+        "type": "PngImageFile",
+        "preview": "<PIL.PngImagePlugin.PngImageFile image mode=RGB size=256x256 at 0x7F7246719590>"
+      },
+      "state": {
+        "type": "list",
+        "len": 8,
+        "preview": "[-0.05338004603981972, 0.007029631175100803, 0.6783280968666077, 3.1407692432403564, 0.0017593271331861615]"
+      },
+      "actions": {
+        "type": "list",
+        "len": 7,
+        "preview": "[0.01607142947614193, 0.0, -0.0, 0.0, 0.0]"
+      },
+      "timestamp": {
+        "type": "float",
+        "preview": "0.0"
+      },
+      "frame_index": {
+        "type": "int",
+        "preview": "0"
+      },
+      "episode_index": {
+        "type": "int",
+        "preview": "0"
+      },
+      "index": {
+        "type": "int",
+        "preview": "0"
+      },
+      "task_index": {
+        "type": "int",
+        "preview": "0"
+      }
+    }
+  },
+  {
+    "index": 1,
+    "keys": [
+      "image",
+      "wrist_image",
+      "state",
+      "actions",
+      "timestamp",
+      "frame_index",
+      "episode_index",
+      "index",
+      "task_index"
+    ],
+    "fields": {
+      "image": {
+        "type": "PngImageFile",
+        "preview": "<PIL.PngImagePlugin.PngImageFile image mode=RGB size=256x256 at 0x7F724671BE50>"
+      },
+      "wrist_image": {
+        "type": "PngImageFile",
+        "preview": "<PIL.PngImagePlugin.PngImageFile image mode=RGB size=256x256 at 0x7F7246728190>"
+      },
+      "state": {
+        "type": "list",
+        "len": 8,
+        "preview": "[-0.05331140756607056, 0.007027116138488054, 0.6783228516578674, 3.140770196914673, 0.0017220743466168642]"
+      },
+      "actions": {
+        "type": "list",
+        "len": 7,
+        "preview": "[0.013392857275903225, 0.0, -0.0, 0.0, 0.0]"
+      },
+      "timestamp": {
+        "type": "float",
+        "preview": "0.10000000149011612"
+      },
+      "frame_index": {
+        "type": "int",
+        "preview": "1"
+      },
+      "episode_index": {
+        "type": "int",
+        "preview": "0"
+      },
+      "index": {
+        "type": "int",
+        "preview": "1"
+      },
+      "task_index": {
+        "type": "int",
+        "preview": "0"
+      }
+    }
+  },
+  {
+    "index": 2,
+    "keys": [
+      "image",
+      "wrist_image",
+      "state",
+      "actions",
+      "timestamp",
+      "frame_index",
+      "episode_index",
+      "index",
+      "task_index"
+    ],
+    "fields": {
+      "image": {
+        "type": "PngImageFile",
+        "preview": "<PIL.PngImagePlugin.PngImageFile image mode=RGB size=256x256 at 0x7F7246728890>"
+      },
+      "wrist_image": {
+        "type": "PngImageFile",
+        "preview": "<PIL.PngImagePlugin.PngImageFile image mode=RGB size=256x256 at 0x7F7246728B10>"
+      },
+      "state": {
+        "type": "list",
+        "len": 8,
+        "preview": "[-0.05320742353796959, 0.007024175021797419, 0.6782967448234558, 3.140775442123413, 0.00169978360645473]"
+      },
+      "actions": {
+        "type": "list",
+        "len": 7,
+        "preview": "[0.0026785715017467737, 0.0, -0.0, 0.0, 0.0]"
+      },
+      "timestamp": {
+        "type": "float",
+        "preview": "0.20000000298023224"
+      },
+      "frame_index": {
+        "type": "int",
+        "preview": "2"
+      },
+      "episode_index": {
+        "type": "int",
+        "preview": "0"
+      },
+      "index": {
+        "type": "int",
+        "preview": "2"
+      },
+      "task_index": {
+        "type": "int",
+        "preview": "0"
+      }
+    }
+  },
+  {
+    "index": 10,
+    "keys": [
+      "image",
+      "wrist_image",
+      "state",
+      "actions",
+      "timestamp",
+      "frame_index",
+      "episode_index",
+      "index",
+      "task_index"
+    ],
+    "fields": {
+      "image": {
+        "type": "PngImageFile",
+        "preview": "<PIL.PngImagePlugin.PngImageFile image mode=RGB size=256x256 at 0x7F7246729210>"
+      },
+      "wrist_image": {
+        "type": "PngImageFile",
+        "preview": "<PIL.PngImagePlugin.PngImageFile image mode=RGB size=256x256 at 0x7F72467294D0>"
+      },
+      "state": {
+        "type": "list",
+        "len": 8,
+        "preview": "[-0.053646765649318695, -0.0075844363309443, 0.6752105355262756, 3.1385488510131836, -0.0038596061058342457]"
+      },
+      "actions": {
+        "type": "list",
+        "len": 7,
+        "preview": "[-0.02142857201397419, -0.4580357074737549, -0.13660714030265808, 0.008571428246796131, 0.0]"
+      },
+      "timestamp": {
+        "type": "float",
+        "preview": "1.0"
+      },
+      "frame_index": {
+        "type": "int",
+        "preview": "10"
+      },
+      "episode_index": {
+        "type": "int",
+        "preview": "0"
+      },
+      "index": {
+        "type": "int",
+        "preview": "10"
+      },
+      "task_index": {
+        "type": "int",
+        "preview": "0"
+      }
+    }
+  },
+  {
+    "index": 100,
+    "keys": [
+      "image",
+      "wrist_image",
+      "state",
+      "actions",
+      "timestamp",
+      "frame_index",
+      "episode_index",
+      "index",
+      "task_index"
+    ],
+    "fields": {
+      "image": {
+        "type": "PngImageFile",
+        "preview": "<PIL.PngImagePlugin.PngImageFile image mode=RGB size=256x256 at 0x7F7246729BD0>"
+      },
+      "wrist_image": {
+        "type": "PngImageFile",
+        "preview": "<PIL.PngImagePlugin.PngImageFile image mode=RGB size=256x256 at 0x7F7246729E50>"
+      },
+      "state": {
+        "type": "list",
+        "len": 8,
+        "preview": "[-0.006412954535335302, -0.26083725690841675, 0.5791366100311279, 3.0174689292907715, 0.13794898986816406]"
+      },
+      "actions": {
+        "type": "list",
+        "len": 7,
+        "preview": "[0.15535713732242584, 0.17142857611179352, 0.5008928775787354, -0.11999999731779099, 0.0]"
+      },
+      "timestamp": {
+        "type": "float",
+        "preview": "10.0"
+      },
+      "frame_index": {
+        "type": "int",
+        "preview": "100"
+      },
+      "episode_index": {
+        "type": "int",
+        "preview": "0"
+      },
+      "index": {
+        "type": "int",
+        "preview": "100"
+      },
+      "task_index": {
+        "type": "int",
+        "preview": "0"
+      }
+    }
+  }
+]

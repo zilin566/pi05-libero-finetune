@@ -884,7 +884,9 @@ pi05-libero-finetune/
 ├── .gitignore
 │
 ├── configs/
-│   └── pi05_libero_norm_stats.json
+│   ├── config.py
+│   ├── norm_stats.json
+│   └── pi05_libero_day5_n100_s1000.py
 │
 ├── docs/
 │   ├── data_format.md
@@ -944,7 +946,9 @@ SFT 主线已经完成：
 
 下一阶段：
 
-- [ ] 完成 README、Demo、GIF 与项目文档交付
+- [x] 完成 README 可展示版本与 6 条代表性 MP4
+- [ ] 制作 README 首页 GIF
+- [ ] 整理 eval、failure 和 deployment 三份正式文档
 - [ ] 冻结 step 13,999 SFT baseline
 - [ ] 审计 openpi 的 RL / preference-training 支持
 - [ ] 读取 Task 8 BDDL 并设计 reward v0

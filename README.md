@@ -16,6 +16,39 @@ LIBERO 数据理解
 → 失败分布与受控鲁棒性
 → bf16 部署指标
 ```
+
+## Rollout Demos
+
+### Successful Rollouts
+
+#### Task 1 — Two-object sequential manipulation
+
+![Task 1 success](docs/media/day25/success_task1_two_objects_to_basket.gif)
+
+#### Task 4 — Object-target association
+
+![Task 4 success](docs/media/day25/success_task4_two_mugs_two_plates.gif)
+
+#### Task 5 — Book placement in the caddy
+
+![Task 5 success](docs/media/day25/success_task5_book_back_compartment.gif)
+
+### Representative Failures
+
+#### Task 5 — Placement outside target
+
+![Task 5 failure](docs/media/day25/failure_task5_place_outside_target.gif)
+
+#### Task 8 — Second-object grasp failure
+
+![Task 8 failure](docs/media/day25/failure_task8_second_object_grasp.gif)
+
+#### Task 9 — Premature microwave placement
+
+![Task 9 failure](docs/media/day25/failure_task9_microwave_placement.gif)
+
+> The GIFs are compressed previews. Full-resolution MP4 files are available in [`docs/media/day24/`](docs/media/day24/README.md).
+
 ## Key Results
 
 - **数据与验证**：完成 LIBERO / LeRobot 图像、state、action、task、episode 与 metadata 全链路检查；深度检查 100 个 episode，`flagged_episodes = 0`。
@@ -965,7 +998,7 @@ SFT 主线已经完成：
 下一阶段：
 
 - [x] 完成 README 可展示版本与 6 条代表性 MP4
-- [ ] 制作 README 首页 GIF
+- [x] 制作 README 首页 GIF
 - [x] 完成正式评测协议文档
 - [x] 完成失败分布文档
 - [x] 完成部署说明文档

@@ -1,0 +1,419 @@
+{
+  "experiment": "Task 5 initial-state controlled robustness",
+  "changed_variable": "INITIAL_STATE_ID",
+  "conditions": [
+    0,
+    2
+  ],
+  "episodes_per_condition": 10,
+  "groups": {
+    "0": {
+      "successes": 9,
+      "trials": 10,
+      "success_rate": 0.9,
+      "wilson_95_ci": [
+        0.5958436145024278,
+        0.9821242504842788
+      ],
+      "mean_completion_steps_success_only": 173.11111111111111,
+      "median_completion_steps_success_only": 169,
+      "minimum_success_margin_mm": {
+        "x": 2.0457457401601986,
+        "y": 38.74640200429502,
+        "z": 0.6175897868396785
+      },
+      "mean_success_margin_mm": {
+        "x": 16.047885392088187,
+        "y": 45.87317948304856,
+        "z": 2.2386957002434746
+      }
+    },
+    "2": {
+      "successes": 7,
+      "trials": 10,
+      "success_rate": 0.7,
+      "wilson_95_ci": [
+        0.39677321997956516,
+        0.892210712513788
+      ],
+      "mean_completion_steps_success_only": 181.57142857142858,
+      "median_completion_steps_success_only": 175,
+      "minimum_success_margin_mm": {
+        "x": 1.0245703124634464,
+        "y": 20.285456090772787,
+        "z": 0.28583053493713706
+      },
+      "mean_success_margin_mm": {
+        "x": 10.538814386802843,
+        "y": 45.73666424371418,
+        "z": 1.8119591961688173
+      }
+    }
+  },
+  "records": [
+    {
+      "state": 0,
+      "success": true,
+      "policy_query_count": 34,
+      "executed_policy_steps": 168,
+      "last_environment_step": 177,
+      "x_margin_mm": 19.213448936004905,
+      "y_margin_mm": 39.26080363786025,
+      "z_margin_mm": 3.7567511343448157,
+      "axis_pass": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "contain": true,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair01/order1_state0/ckptrobust_p01_o1_s0_task5_state0.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair01/order1_state0/ckptrobust_p01_o1_s0_task5_state0.mp4"
+    },
+    {
+      "state": 2,
+      "success": true,
+      "policy_query_count": 35,
+      "executed_policy_steps": 174,
+      "last_environment_step": 183,
+      "x_margin_mm": 1.0245703124634464,
+      "y_margin_mm": 49.77568371918484,
+      "z_margin_mm": 1.2597342769824493,
+      "axis_pass": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "contain": true,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair01/order2_state2/ckptrobust_p01_o2_s2_task5_state2.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair01/order2_state2/ckptrobust_p01_o2_s2_task5_state2.mp4"
+    },
+    {
+      "state": 2,
+      "success": false,
+      "policy_query_count": 104,
+      "executed_policy_steps": 520,
+      "last_environment_step": 529,
+      "x_margin_mm": -112.1010545815594,
+      "y_margin_mm": 59.47396707519073,
+      "z_margin_mm": 50.34984303999956,
+      "axis_pass": {
+        "x": false,
+        "y": true,
+        "z": true
+      },
+      "contain": false,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair02/order1_state2/ckptrobust_p02_o1_s2_task5_state2.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair02/order1_state2/ckptrobust_p02_o1_s2_task5_state2.mp4"
+    },
+    {
+      "state": 0,
+      "success": true,
+      "policy_query_count": 38,
+      "executed_policy_steps": 188,
+      "last_environment_step": 197,
+      "x_margin_mm": 14.520105287167961,
+      "y_margin_mm": 58.929866226337694,
+      "z_margin_mm": 1.630829468187045,
+      "axis_pass": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "contain": true,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair02/order2_state0/ckptrobust_p02_o2_s0_task5_state0.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair02/order2_state0/ckptrobust_p02_o2_s0_task5_state0.mp4"
+    },
+    {
+      "state": 0,
+      "success": true,
+      "policy_query_count": 37,
+      "executed_policy_steps": 184,
+      "last_environment_step": 193,
+      "x_margin_mm": 26.823341741174012,
+      "y_margin_mm": 49.30129438648087,
+      "z_margin_mm": 0.8880888185482938,
+      "axis_pass": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "contain": true,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair03/order1_state0/ckptrobust_p03_o1_s0_task5_state0.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair03/order1_state0/ckptrobust_p03_o1_s0_task5_state0.mp4"
+    },
+    {
+      "state": 2,
+      "success": false,
+      "policy_query_count": 104,
+      "executed_policy_steps": 520,
+      "last_environment_step": 529,
+      "x_margin_mm": -93.25421500276792,
+      "y_margin_mm": 26.12193335179941,
+      "z_margin_mm": 44.0774517285869,
+      "axis_pass": {
+        "x": false,
+        "y": true,
+        "z": true
+      },
+      "contain": false,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair03/order2_state2/ckptrobust_p03_o2_s2_task5_state2.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair03/order2_state2/ckptrobust_p03_o2_s2_task5_state2.mp4"
+    },
+    {
+      "state": 2,
+      "success": true,
+      "policy_query_count": 34,
+      "executed_policy_steps": 166,
+      "last_environment_step": 175,
+      "x_margin_mm": 5.487092791618631,
+      "y_margin_mm": 47.14694577720394,
+      "z_margin_mm": 3.838260248198555,
+      "axis_pass": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "contain": true,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair04/order1_state2/ckptrobust_p04_o1_s2_task5_state2.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair04/order1_state2/ckptrobust_p04_o1_s2_task5_state2.mp4"
+    },
+    {
+      "state": 0,
+      "success": false,
+      "policy_query_count": 104,
+      "executed_policy_steps": 520,
+      "last_environment_step": 529,
+      "x_margin_mm": -91.88017710945506,
+      "y_margin_mm": 54.29410945513904,
+      "z_margin_mm": 63.74267280097756,
+      "axis_pass": {
+        "x": false,
+        "y": true,
+        "z": true
+      },
+      "contain": false,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair04/order2_state0/ckptrobust_p04_o2_s0_task5_state0.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair04/order2_state0/ckptrobust_p04_o2_s0_task5_state0.mp4"
+    },
+    {
+      "state": 0,
+      "success": true,
+      "policy_query_count": 34,
+      "executed_policy_steps": 169,
+      "last_environment_step": 178,
+      "x_margin_mm": 20.769048489367727,
+      "y_margin_mm": 55.64811552344215,
+      "z_margin_mm": 1.8407322028137774,
+      "axis_pass": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "contain": true,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair05/order1_state0/ckptrobust_p05_o1_s0_task5_state0.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair05/order1_state0/ckptrobust_p05_o1_s0_task5_state0.mp4"
+    },
+    {
+      "state": 2,
+      "success": true,
+      "policy_query_count": 40,
+      "executed_policy_steps": 200,
+      "last_environment_step": 209,
+      "x_margin_mm": 23.338073534589444,
+      "y_margin_mm": 20.285456090772787,
+      "z_margin_mm": 0.28583053493713706,
+      "axis_pass": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "contain": true,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair05/order2_state2/ckptrobust_p05_o2_s2_task5_state2.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair05/order2_state2/ckptrobust_p05_o2_s2_task5_state2.mp4"
+    },
+    {
+      "state": 2,
+      "success": true,
+      "policy_query_count": 37,
+      "executed_policy_steps": 182,
+      "last_environment_step": 191,
+      "x_margin_mm": 19.01432663971597,
+      "y_margin_mm": 51.619470065552925,
+      "z_margin_mm": 0.8254705036105925,
+      "axis_pass": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "contain": true,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair06/order1_state2/ckptrobust_p06_o1_s2_task5_state2.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair06/order1_state2/ckptrobust_p06_o1_s2_task5_state2.mp4"
+    },
+    {
+      "state": 0,
+      "success": true,
+      "policy_query_count": 35,
+      "executed_policy_steps": 174,
+      "last_environment_step": 183,
+      "x_margin_mm": 17.039050407570645,
+      "y_margin_mm": 42.88541401918133,
+      "z_margin_mm": 1.2864313194114185,
+      "axis_pass": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "contain": true,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair06/order2_state0/ckptrobust_p06_o2_s0_task5_state0.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair06/order2_state0/ckptrobust_p06_o2_s0_task5_state0.mp4"
+    },
+    {
+      "state": 0,
+      "success": true,
+      "policy_query_count": 33,
+      "executed_policy_steps": 161,
+      "last_environment_step": 170,
+      "x_margin_mm": 10.206725369829083,
+      "y_margin_mm": 45.73722260492863,
+      "z_margin_mm": 3.342828326950764,
+      "axis_pass": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "contain": true,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair07/order1_state0/ckptrobust_p07_o1_s0_task5_state0.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair07/order1_state0/ckptrobust_p07_o1_s0_task5_state0.mp4"
+    },
+    {
+      "state": 2,
+      "success": true,
+      "policy_query_count": 41,
+      "executed_policy_steps": 202,
+      "last_environment_step": 211,
+      "x_margin_mm": 4.9258047706308155,
+      "y_margin_mm": 49.572859028969546,
+      "z_margin_mm": 0.8022914583412089,
+      "axis_pass": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "contain": true,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair07/order2_state2/ckptrobust_p07_o2_s2_task5_state2.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair07/order2_state2/ckptrobust_p07_o2_s2_task5_state2.mp4"
+    },
+    {
+      "state": 2,
+      "success": true,
+      "policy_query_count": 35,
+      "executed_policy_steps": 172,
+      "last_environment_step": 181,
+      "x_margin_mm": 7.171538050422366,
+      "y_margin_mm": 54.78377391112812,
+      "z_margin_mm": 2.493453995146444,
+      "axis_pass": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "contain": true,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair08/order1_state2/ckptrobust_p08_o1_s2_task5_state2.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair08/order1_state2/ckptrobust_p08_o1_s2_task5_state2.mp4"
+    },
+    {
+      "state": 0,
+      "success": true,
+      "policy_query_count": 34,
+      "executed_policy_steps": 166,
+      "last_environment_step": 175,
+      "x_margin_mm": 17.943931684010373,
+      "y_margin_mm": 40.082349708985085,
+      "z_margin_mm": 0.6175897868396785,
+      "axis_pass": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "contain": true,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair08/order2_state0/ckptrobust_p08_o2_s0_task5_state0.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair08/order2_state0/ckptrobust_p08_o2_s0_task5_state0.mp4"
+    },
+    {
+      "state": 0,
+      "success": true,
+      "policy_query_count": 36,
+      "executed_policy_steps": 179,
+      "last_environment_step": 188,
+      "x_margin_mm": 2.0457457401601986,
+      "y_margin_mm": 38.74640200429502,
+      "z_margin_mm": 1.2133662989359806,
+      "axis_pass": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "contain": true,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair09/order1_state0/ckptrobust_p09_o1_s0_task5_state0.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair09/order1_state0/ckptrobust_p09_o1_s0_task5_state0.mp4"
+    },
+    {
+      "state": 2,
+      "success": false,
+      "policy_query_count": 104,
+      "executed_policy_steps": 520,
+      "last_environment_step": 529,
+      "x_margin_mm": -3.148371793563254,
+      "y_margin_mm": -50.50330871097977,
+      "z_margin_mm": 5.89720535195748,
+      "axis_pass": {
+        "x": false,
+        "y": false,
+        "z": true
+      },
+      "contain": false,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair09/order2_state2/ckptrobust_p09_o2_s2_task5_state2.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair09/order2_state2/ckptrobust_p09_o2_s2_task5_state2.mp4"
+    },
+    {
+      "state": 2,
+      "success": true,
+      "policy_query_count": 35,
+      "executed_policy_steps": 175,
+      "last_environment_step": 184,
+      "x_margin_mm": 12.810294608179229,
+      "y_margin_mm": 46.972461113187094,
+      "z_margin_mm": 3.1786733559653335,
+      "axis_pass": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "contain": true,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair10/order1_state2/ckptrobust_p10_o1_s2_task5_state2.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair10/order1_state2/ckptrobust_p10_o1_s2_task5_state2.mp4"
+    },
+    {
+      "state": 0,
+      "success": true,
+      "policy_query_count": 34,
+      "executed_policy_steps": 169,
+      "last_environment_step": 178,
+      "x_margin_mm": 15.869570873508765,
+      "y_margin_mm": 42.267147235926004,
+      "z_margin_mm": 5.571643946159499,
+      "axis_pass": {
+        "x": true,
+        "y": true,
+        "z": true
+      },
+      "contain": true,
+      "jsonl_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair10/order2_state0/ckptrobust_p10_o2_s0_task5_state0.jsonl",
+      "video_path": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair10/order2_state0/ckptrobust_p10_o2_s0_task5_state0.mp4"
+    }
+  ],
+  "limitations": [
+    "Policy RNG cannot be explicitly fixed, so exact policy-noise pairing is unavailable.",
+    "AB/BA alternating order was used to reduce systematic run-order bias."
+  ]
+}

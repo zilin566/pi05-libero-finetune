@@ -1,0 +1,89 @@
+{
+  "measurement": {
+    "sampling_source": "nvidia-smi",
+    "sampling_interval_approx_ms": 200,
+    "gpu_index": 0,
+    "checkpoint_config": "pi05_libero_day22_bs4_e2",
+    "checkpoint_step": 13999,
+    "precision": "bfloat16",
+    "policy_batch_size": 1,
+    "model_internal_action_dim": 32,
+    "environment_action_dim": 7,
+    "returned_action_chunk_shape": [
+      10,
+      7
+    ],
+    "replan_steps": 5
+  },
+  "memory": {
+    "baseline_total_mib": 0.0,
+    "loaded_idle_total_mib": 24617.0,
+    "loaded_idle_increment_over_baseline_mib": 24617.0,
+    "observed_peak_total_mib": 24693.0,
+    "observed_peak_increment_over_baseline_mib": 24693.0
+  },
+  "latency": {
+    "query_count": 35,
+    "cold_start_first_query_ms": 24850.52541270852,
+    "steady_query_count": 34,
+    "steady_mean_ms": 83.24585855007172,
+    "steady_p50_ms": 81.18296228349209,
+    "steady_p95_ms": 99.90090075880289
+  },
+  "phases": {
+    "baseline": {
+      "sample_count": 8,
+      "memory_mean_mib": 0.0,
+      "memory_median_mib": 0.0,
+      "memory_p95_mib": 0.0,
+      "memory_peak_mib": 0.0,
+      "gpu_utilization_mean_percent": 0.0,
+      "gpu_utilization_peak_percent": 0.0
+    },
+    "model_loading": {
+      "sample_count": 44,
+      "memory_mean_mib": 14556.09090909091,
+      "memory_median_mib": 24610.0,
+      "memory_p95_mib": 24617.0,
+      "memory_peak_mib": 24617.0,
+      "gpu_utilization_mean_percent": 1.0681818181818181,
+      "gpu_utilization_peak_percent": 20.0
+    },
+    "loaded_idle": {
+      "sample_count": 18,
+      "memory_mean_mib": 24617.0,
+      "memory_median_mib": 24617.0,
+      "memory_p95_mib": 24617.0,
+      "memory_peak_mib": 24617.0,
+      "gpu_utilization_mean_percent": 0.0,
+      "gpu_utilization_peak_percent": 0.0
+    },
+    "rollout": {
+      "sample_count": 232,
+      "memory_mean_mib": 24671.46551724138,
+      "memory_median_mib": 24693.0,
+      "memory_p95_mib": 24693.0,
+      "memory_peak_mib": 24693.0,
+      "gpu_utilization_mean_percent": 3.4741379310344827,
+      "gpu_utilization_peak_percent": 58.0
+    },
+    "post_rollout_idle": {
+      "sample_count": 11,
+      "memory_mean_mib": 24693.0,
+      "memory_median_mib": 24693.0,
+      "memory_p95_mib": 24693.0,
+      "memory_peak_mib": 24693.0,
+      "gpu_utilization_mean_percent": 0.0,
+      "gpu_utilization_peak_percent": 0.0
+    },
+    "full_server_lifetime": {
+      "sample_count": 305,
+      "memory_mean_mib": 23209.760655737704,
+      "memory_median_mib": 24689.0,
+      "memory_p95_mib": 24693.0,
+      "memory_peak_mib": 24693.0,
+      "gpu_utilization_mean_percent": 2.7967213114754097,
+      "gpu_utilization_peak_percent": 58.0
+    }
+  }
+}

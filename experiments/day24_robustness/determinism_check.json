@@ -1,0 +1,55 @@
+{
+  "experiment": "day24_determinism_audit",
+  "checkpoint": {
+    "config": "pi05_libero_day22_bs4_e2",
+    "step": 13999
+  },
+  "fixed_protocol": {
+    "task_suite": "libero_10",
+    "task_id": 5,
+    "initial_state_id": 1,
+    "environment_seed": 7,
+    "replan_steps": 5,
+    "max_policy_steps": 520
+  },
+  "seed_definitions": {
+    "initial_state_id": "Index of a predefined LIBERO initial state; not a random seed.",
+    "environment_seed": "Seed passed to NumPy and the LIBERO environment; not the policy seed.",
+    "policy_rng": "Internal JAX RNG initialized from key(0) on server creation and advanced once per policy inference."
+  },
+  "same_server_test": {
+    "runs": 2,
+    "successes": 2,
+    "result": "Trajectories differed because the same server continued advancing its internal policy RNG, but both rollouts succeeded."
+  },
+  "fresh_server_test": {
+    "runs": 2,
+    "successes": 2,
+    "policy_query_count": [
+      35,
+      35
+    ],
+    "environment_step_count": [
+      182,
+      181
+    ],
+    "first_action_divergence": {
+      "action_index": 10,
+      "environment_step": 10,
+      "phase": "policy",
+      "max_abs_delta": 0.0019527077674865723,
+      "l2_delta": 0.002625817256008471
+    },
+    "wait_actions_identical": true,
+    "trajectory_identical": false
+  },
+  "conclusion": {
+    "trajectory_level_reproducible": false,
+    "task_level_repeat_successes": "4/4 for Task 5 state 1",
+    "remaining_possible_sources": [
+      "Initial policy observation differs slightly across runs.",
+      "JAX/GPU policy inference has residual numerical nondeterminism."
+    ],
+    "wording": "The online evaluation contains residual nondeterminism not fully controlled by ENV_SEED. The exact trajectory is not reproducible, although Task 5 state 1 remained successful in all repeated trials."
+  }
+}

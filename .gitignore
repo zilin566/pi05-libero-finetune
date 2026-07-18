@@ -4,13 +4,20 @@ venv/
 __pycache__/
 *.pyc
 
-# large data
+# large data & caches
 data/
 datasets/
+cache/
+hf_cache/
+lerobot_cache/
+*.arrow
+*.parquet
+
+# training outputs
 checkpoints/
 outputs/
 wandb/
-lerobot_cache/
+*.tar.gz
 
 # model weights
 *.pt
@@ -19,5 +26,25 @@ lerobot_cache/
 *.safetensors
 *.bin
 
-# system
+# OS / editor
+.vscode/
 .DS_Store
+
+assets/
+checkpoints/
+data/
+datasets/
+*.parquet
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+# Complete local rollout video archive
+video/**/*.mp4
+# Complete local rollout video archive
+video/**/*.mp4
+
+# Cloud transfer archives
+_cloud_exports/
+*.tar
+*.tar.gz

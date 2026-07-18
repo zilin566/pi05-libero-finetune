@@ -1,0 +1,202 @@
+[
+  {
+    "run": "run1",
+    "success": true,
+    "policy_queries": 44,
+    "last_policy_step": 229,
+    "x_margin_mm": 1.092,
+    "y_margin_mm": 41.164,
+    "z_margin_mm": 10.529,
+    "axis_pass": {
+      "x": true,
+      "y": true,
+      "z": true
+    },
+    "contain": true,
+    "book_world_pos": [
+      -0.40339760078360576,
+      -0.1122888650406878,
+      1.022510739156478
+    ]
+  },
+  {
+    "run": "run10",
+    "success": true,
+    "policy_queries": 37,
+    "last_policy_step": 190,
+    "x_margin_mm": 8.039,
+    "y_margin_mm": 26.423,
+    "z_margin_mm": 0.412,
+    "axis_pass": {
+      "x": true,
+      "y": true,
+      "z": true
+    },
+    "contain": true,
+    "book_world_pos": [
+      -0.41034469690996234,
+      -0.09754803687939134,
+      1.0326279878190128
+    ]
+  },
+  {
+    "run": "run2",
+    "success": true,
+    "policy_queries": 39,
+    "last_policy_step": 200,
+    "x_margin_mm": 22.365,
+    "y_margin_mm": 61.406,
+    "z_margin_mm": 1.7,
+    "axis_pass": {
+      "x": true,
+      "y": true,
+      "z": true
+    },
+    "contain": true,
+    "book_world_pos": [
+      -0.43544069017362835,
+      -0.13253144573675227,
+      1.0313398047407152
+    ]
+  },
+  {
+    "run": "run3",
+    "success": true,
+    "policy_queries": 79,
+    "last_policy_step": 404,
+    "x_margin_mm": 19.288,
+    "y_margin_mm": 42.4,
+    "z_margin_mm": 2.558,
+    "axis_pass": {
+      "x": true,
+      "y": true,
+      "z": true
+    },
+    "contain": true,
+    "book_world_pos": [
+      -0.4385174682022038,
+      -0.15304516559569545,
+      1.0304822066169264
+    ]
+  },
+  {
+    "run": "run4",
+    "success": true,
+    "policy_queries": 34,
+    "last_policy_step": 179,
+    "x_margin_mm": 9.237,
+    "y_margin_mm": 59.814,
+    "z_margin_mm": 1.11,
+    "axis_pass": {
+      "x": true,
+      "y": true,
+      "z": true
+    },
+    "contain": true,
+    "book_world_pos": [
+      -0.4115428270152445,
+      -0.130939689330107,
+      1.0319300519273131
+    ]
+  },
+  {
+    "run": "run5",
+    "success": true,
+    "policy_queries": 56,
+    "last_policy_step": 288,
+    "x_margin_mm": 20.857,
+    "y_margin_mm": 40.349,
+    "z_margin_mm": 3.16,
+    "axis_pass": {
+      "x": true,
+      "y": true,
+      "z": true
+    },
+    "contain": true,
+    "book_world_pos": [
+      -0.4231621932119304,
+      -0.15509605453671202,
+      1.0298800215448705
+    ]
+  },
+  {
+    "run": "run6",
+    "success": true,
+    "policy_queries": 42,
+    "last_policy_step": 215,
+    "x_margin_mm": 15.437,
+    "y_margin_mm": 47.784,
+    "z_margin_mm": 1.267,
+    "axis_pass": {
+      "x": true,
+      "y": true,
+      "z": true
+    },
+    "contain": true,
+    "book_world_pos": [
+      -0.41774243580798853,
+      -0.14766148802213017,
+      1.031773375057926
+    ]
+  },
+  {
+    "run": "run7",
+    "success": true,
+    "policy_queries": 36,
+    "last_policy_step": 187,
+    "x_margin_mm": 19.316,
+    "y_margin_mm": 61.19,
+    "z_margin_mm": 1.989,
+    "axis_pass": {
+      "x": true,
+      "y": true,
+      "z": true
+    },
+    "contain": true,
+    "book_world_pos": [
+      -0.4384898412418708,
+      -0.13425501349660252,
+      1.0310513841718671
+    ]
+  },
+  {
+    "run": "run8",
+    "success": true,
+    "policy_queries": 35,
+    "last_policy_step": 180,
+    "x_margin_mm": 0.002,
+    "y_margin_mm": 54.485,
+    "z_margin_mm": 5.544,
+    "axis_pass": {
+      "x": true,
+      "y": true,
+      "z": true
+    },
+    "contain": true,
+    "book_world_pos": [
+      -0.40230772740258325,
+      -0.12561014354872815,
+      1.0274960507671909
+    ]
+  },
+  {
+    "run": "run9",
+    "success": true,
+    "policy_queries": 37,
+    "last_policy_step": 190,
+    "x_margin_mm": 5.205,
+    "y_margin_mm": 36.18,
+    "z_margin_mm": 14.764,
+    "axis_pass": {
+      "x": true,
+      "y": true,
+      "z": true
+    },
+    "contain": true,
+    "book_world_pos": [
+      -0.4075103957301076,
+      -0.10730478286461179,
+      1.0182763922180191
+    ]
+  }
+]

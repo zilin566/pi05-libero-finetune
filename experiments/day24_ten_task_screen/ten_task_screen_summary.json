@@ -1,0 +1,1055 @@
+{
+  "protocol": {
+    "checkpoint_config": "pi05_libero_day22_bs4_e2",
+    "checkpoint_step": 13999,
+    "task_suite": "libero_10",
+    "task_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "initial_state_ids": [
+      0,
+      1,
+      2
+    ],
+    "environment_seed": 7,
+    "replan_steps": 5,
+    "max_policy_steps": 520,
+    "evaluation_type": "three-rollout-per-task breadth screening; not a formal benchmark"
+  },
+  "overall": {
+    "successes": 25,
+    "trials": 30,
+    "success_rate": 0.8333333333333334,
+    "failed_trials": 5
+  },
+  "per_task": [
+    {
+      "task": 0,
+      "task_description": "put both the alphabet soup and the tomato sauce in the basket",
+      "successes": 3,
+      "trials": 3,
+      "success_rate": 1.0
+    },
+    {
+      "task": 1,
+      "task_description": "put both the cream cheese box and the butter in the basket",
+      "successes": 3,
+      "trials": 3,
+      "success_rate": 1.0
+    },
+    {
+      "task": 2,
+      "task_description": "turn on the stove and put the moka pot on it",
+      "successes": 3,
+      "trials": 3,
+      "success_rate": 1.0
+    },
+    {
+      "task": 3,
+      "task_description": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "successes": 3,
+      "trials": 3,
+      "success_rate": 1.0
+    },
+    {
+      "task": 4,
+      "task_description": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "successes": 3,
+      "trials": 3,
+      "success_rate": 1.0
+    },
+    {
+      "task": 5,
+      "task_description": "pick up the book and place it in the back compartment of the caddy",
+      "successes": 2,
+      "trials": 3,
+      "success_rate": 0.6666666666666666
+    },
+    {
+      "task": 6,
+      "task_description": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "successes": 3,
+      "trials": 3,
+      "success_rate": 1.0
+    },
+    {
+      "task": 7,
+      "task_description": "put both the alphabet soup and the cream cheese box in the basket",
+      "successes": 3,
+      "trials": 3,
+      "success_rate": 1.0
+    },
+    {
+      "task": 8,
+      "task_description": "put both moka pots on the stove",
+      "successes": 0,
+      "trials": 3,
+      "success_rate": 0.0
+    },
+    {
+      "task": 9,
+      "task_description": "put the yellow and white mug in the microwave and close it",
+      "successes": 2,
+      "trials": 3,
+      "success_rate": 0.6666666666666666
+    }
+  ],
+  "failures": [
+    {
+      "task": 5,
+      "state": 2,
+      "success": false,
+      "task_description": "pick up the book and place it in the back compartment of the caddy",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 104,
+      "executed_policy_steps": 520,
+      "last_environment_step": 529,
+      "eef_movement_l2": 0.2932341192585031,
+      "final_eef_pos": [
+        -0.42842492112771957,
+        -0.24955738646176065,
+        1.0621762707422
+      ],
+      "final_gripper_qpos": [
+        0.0007705353659471135,
+        -0.006121713791971576
+      ],
+      "mean_action_l2": 1.190007104320562,
+      "max_action_l2": 1.6371914446168976,
+      "gripper_sign_flips": 22,
+      "jsonl_path": "experiments/day24_ten_task_screen/task5/state2/ckptday22_s13999_screen_task5_state2.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task5/state2/ckptday22_s13999_screen_task5_state2.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task5/state2/client.log"
+    },
+    {
+      "task": 8,
+      "state": 0,
+      "success": false,
+      "task_description": "put both moka pots on the stove",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 104,
+      "executed_policy_steps": 520,
+      "last_environment_step": 529,
+      "eef_movement_l2": 0.1905440469395595,
+      "final_eef_pos": [
+        -0.09988123000436533,
+        0.13111182738601396,
+        1.0706869946458868
+      ],
+      "final_gripper_qpos": [
+        0.04000925213195945,
+        -0.03957425480661514
+      ],
+      "mean_action_l2": 1.1283630184174454,
+      "max_action_l2": 1.413625364725419,
+      "gripper_sign_flips": 6,
+      "jsonl_path": "experiments/day24_ten_task_screen/task8/state0/ckptday22_s13999_screen_task8_state0.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task8/state0/ckptday22_s13999_screen_task8_state0.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task8/state0/client.log"
+    },
+    {
+      "task": 8,
+      "state": 1,
+      "success": false,
+      "task_description": "put both moka pots on the stove",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 104,
+      "executed_policy_steps": 520,
+      "last_environment_step": 529,
+      "eef_movement_l2": 0.3951208843545612,
+      "final_eef_pos": [
+        -0.24688320492578605,
+        0.2934090331842192,
+        0.9159036597810878
+      ],
+      "final_gripper_qpos": [
+        0.011003833397796484,
+        -0.010755777611228055
+      ],
+      "mean_action_l2": 1.0609752791311788,
+      "max_action_l2": 1.3087316527740884,
+      "gripper_sign_flips": 26,
+      "jsonl_path": "experiments/day24_ten_task_screen/task8/state1/ckptday22_s13999_screen_task8_state1.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task8/state1/ckptday22_s13999_screen_task8_state1.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task8/state1/client.log"
+    },
+    {
+      "task": 8,
+      "state": 2,
+      "success": false,
+      "task_description": "put both moka pots on the stove",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 104,
+      "executed_policy_steps": 520,
+      "last_environment_step": 529,
+      "eef_movement_l2": 0.36635563815414457,
+      "final_eef_pos": [
+        0.12020670816948215,
+        0.0005635674525175799,
+        1.0141201727473064
+      ],
+      "final_gripper_qpos": [
+        0.0327370754139358,
+        -0.02872805411733968
+      ],
+      "mean_action_l2": 1.0255238683331898,
+      "max_action_l2": 1.2072024819119813,
+      "gripper_sign_flips": 13,
+      "jsonl_path": "experiments/day24_ten_task_screen/task8/state2/ckptday22_s13999_screen_task8_state2.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task8/state2/ckptday22_s13999_screen_task8_state2.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task8/state2/client.log"
+    },
+    {
+      "task": 9,
+      "state": 1,
+      "success": false,
+      "task_description": "put the yellow and white mug in the microwave and close it",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 104,
+      "executed_policy_steps": 520,
+      "last_environment_step": 529,
+      "eef_movement_l2": 0.40412401320571123,
+      "final_eef_pos": [
+        0.06745315523762403,
+        0.1383541425181706,
+        0.9147934527252616
+      ],
+      "final_gripper_qpos": [
+        0.03994559503460129,
+        -0.03982387283375559
+      ],
+      "mean_action_l2": 1.1205088425756313,
+      "max_action_l2": 1.356206281211687,
+      "gripper_sign_flips": 2,
+      "jsonl_path": "experiments/day24_ten_task_screen/task9/state1/ckptday22_s13999_screen_task9_state1.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task9/state1/ckptday22_s13999_screen_task9_state1.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task9/state1/client.log"
+    }
+  ],
+  "records": [
+    {
+      "task": 0,
+      "state": 0,
+      "success": true,
+      "task_description": "put both the alphabet soup and the tomato sauce in the basket",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 85,
+      "executed_policy_steps": 425,
+      "last_environment_step": 434,
+      "eef_movement_l2": 0.26521399463085754,
+      "final_eef_pos": [
+        -0.0077424184804196555,
+        0.25037072491979356,
+        0.6493529749646629
+      ],
+      "final_gripper_qpos": [
+        0.038453792598834344,
+        -0.03853360237025926
+      ],
+      "mean_action_l2": 1.1653407887286462,
+      "max_action_l2": 1.5319249362245575,
+      "gripper_sign_flips": 10,
+      "jsonl_path": "experiments/day24_ten_task_screen/task0/state0/ckptday22_s13999_screen_task0_state0.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task0/state0/ckptday22_s13999_screen_task0_state0.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task0/state0/client.log"
+    },
+    {
+      "task": 0,
+      "state": 1,
+      "success": true,
+      "task_description": "put both the alphabet soup and the tomato sauce in the basket",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 66,
+      "executed_policy_steps": 330,
+      "last_environment_step": 339,
+      "eef_movement_l2": 0.24957758470408545,
+      "final_eef_pos": [
+        0.015478695241171559,
+        0.2520231878528574,
+        0.6670013642906537
+      ],
+      "final_gripper_qpos": [
+        0.037099015367820606,
+        -0.03750770516928274
+      ],
+      "mean_action_l2": 1.1206715017287832,
+      "max_action_l2": 1.4630856508938321,
+      "gripper_sign_flips": 20,
+      "jsonl_path": "experiments/day24_ten_task_screen/task0/state1/ckptday22_s13999_screen_task0_state1.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task0/state1/ckptday22_s13999_screen_task0_state1.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task0/state1/client.log"
+    },
+    {
+      "task": 0,
+      "state": 2,
+      "success": true,
+      "task_description": "put both the alphabet soup and the tomato sauce in the basket",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 71,
+      "executed_policy_steps": 354,
+      "last_environment_step": 363,
+      "eef_movement_l2": 0.28555519742075586,
+      "final_eef_pos": [
+        -0.013063728035953993,
+        0.2605101196455723,
+        0.6556176470663703
+      ],
+      "final_gripper_qpos": [
+        0.03522585627238174,
+        -0.03581982872521907
+      ],
+      "mean_action_l2": 1.1199476948421787,
+      "max_action_l2": 1.5011869095634887,
+      "gripper_sign_flips": 8,
+      "jsonl_path": "experiments/day24_ten_task_screen/task0/state2/ckptday22_s13999_screen_task0_state2.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task0/state2/ckptday22_s13999_screen_task0_state2.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task0/state2/client.log"
+    },
+    {
+      "task": 1,
+      "state": 0,
+      "success": true,
+      "task_description": "put both the cream cheese box and the butter in the basket",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 54,
+      "executed_policy_steps": 267,
+      "last_environment_step": 276,
+      "eef_movement_l2": 0.3180621000596321,
+      "final_eef_pos": [
+        -0.02574113467249633,
+        0.2986951929618912,
+        0.6305130245805347
+      ],
+      "final_gripper_qpos": [
+        0.030201134742767543,
+        -0.03013232953914811
+      ],
+      "mean_action_l2": 1.2087055482174986,
+      "max_action_l2": 1.4926792559790523,
+      "gripper_sign_flips": 16,
+      "jsonl_path": "experiments/day24_ten_task_screen/task1/state0/ckptday22_s13999_screen_task1_state0.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task1/state0/ckptday22_s13999_screen_task1_state0.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task1/state0/client.log"
+    },
+    {
+      "task": 1,
+      "state": 1,
+      "success": true,
+      "task_description": "put both the cream cheese box and the butter in the basket",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 51,
+      "executed_policy_steps": 253,
+      "last_environment_step": 262,
+      "eef_movement_l2": 0.2727766811611213,
+      "final_eef_pos": [
+        0.004526499099959289,
+        0.2732293026233766,
+        0.6293352548723313
+      ],
+      "final_gripper_qpos": [
+        0.026038896744971892,
+        -0.026119958783072175
+      ],
+      "mean_action_l2": 1.2124843161152707,
+      "max_action_l2": 1.4833876253968452,
+      "gripper_sign_flips": 8,
+      "jsonl_path": "experiments/day24_ten_task_screen/task1/state1/ckptday22_s13999_screen_task1_state1.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task1/state1/ckptday22_s13999_screen_task1_state1.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task1/state1/client.log"
+    },
+    {
+      "task": 1,
+      "state": 2,
+      "success": true,
+      "task_description": "put both the cream cheese box and the butter in the basket",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 47,
+      "executed_policy_steps": 235,
+      "last_environment_step": 244,
+      "eef_movement_l2": 0.26761694721639656,
+      "final_eef_pos": [
+        0.013608377937217964,
+        0.2390163664003715,
+        0.6059709618348499
+      ],
+      "final_gripper_qpos": [
+        0.02613240945179361,
+        -0.026018751106495378
+      ],
+      "mean_action_l2": 1.2250704206387644,
+      "max_action_l2": 1.53529670332498,
+      "gripper_sign_flips": 6,
+      "jsonl_path": "experiments/day24_ten_task_screen/task1/state2/ckptday22_s13999_screen_task1_state2.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task1/state2/ckptday22_s13999_screen_task1_state2.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task1/state2/client.log"
+    },
+    {
+      "task": 2,
+      "state": 0,
+      "success": true,
+      "task_description": "turn on the stove and put the moka pot on it",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 50,
+      "executed_policy_steps": 248,
+      "last_environment_step": 257,
+      "eef_movement_l2": 0.24285891653587222,
+      "final_eef_pos": [
+        -0.06324603213130904,
+        0.14774937005364752,
+        1.0345164065497776
+      ],
+      "final_gripper_qpos": [
+        0.008927729742222558,
+        -0.0030984290794774205
+      ],
+      "mean_action_l2": 1.1496207863105996,
+      "max_action_l2": 1.4693678149068325,
+      "gripper_sign_flips": 4,
+      "jsonl_path": "experiments/day24_ten_task_screen/task2/state0/ckptday22_s13999_screen_task2_state0.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task2/state0/ckptday22_s13999_screen_task2_state0.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task2/state0/client.log"
+    },
+    {
+      "task": 2,
+      "state": 1,
+      "success": true,
+      "task_description": "turn on the stove and put the moka pot on it",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 51,
+      "executed_policy_steps": 253,
+      "last_environment_step": 262,
+      "eef_movement_l2": 0.25144561900892465,
+      "final_eef_pos": [
+        -0.03968923289833126,
+        0.15437649086900793,
+        1.0718822465763502
+      ],
+      "final_gripper_qpos": [
+        0.028631149026134114,
+        -0.029317854764645167
+      ],
+      "mean_action_l2": 1.1568795676594223,
+      "max_action_l2": 1.6310727378685168,
+      "gripper_sign_flips": 6,
+      "jsonl_path": "experiments/day24_ten_task_screen/task2/state1/ckptday22_s13999_screen_task2_state1.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task2/state1/ckptday22_s13999_screen_task2_state1.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task2/state1/client.log"
+    },
+    {
+      "task": 2,
+      "state": 2,
+      "success": true,
+      "task_description": "turn on the stove and put the moka pot on it",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 51,
+      "executed_policy_steps": 254,
+      "last_environment_step": 263,
+      "eef_movement_l2": 0.27538893049668195,
+      "final_eef_pos": [
+        -0.05388763225778094,
+        0.16024610834097652,
+        1.0334327562779329
+      ],
+      "final_gripper_qpos": [
+        0.006829010392533432,
+        -0.007301043602146802
+      ],
+      "mean_action_l2": 1.1430307914300013,
+      "max_action_l2": 1.5158340790440046,
+      "gripper_sign_flips": 6,
+      "jsonl_path": "experiments/day24_ten_task_screen/task2/state2/ckptday22_s13999_screen_task2_state2.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task2/state2/ckptday22_s13999_screen_task2_state2.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task2/state2/client.log"
+    },
+    {
+      "task": 3,
+      "state": 0,
+      "success": true,
+      "task_description": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 45,
+      "executed_policy_steps": 225,
+      "last_environment_step": 234,
+      "eef_movement_l2": 0.3934981916040505,
+      "final_eef_pos": [
+        0.016890276700184986,
+        0.18524793789319038,
+        0.9315614732326676
+      ],
+      "final_gripper_qpos": [
+        0.03901138105728257,
+        -0.04001023939442766
+      ],
+      "mean_action_l2": 1.1506334872597388,
+      "max_action_l2": 1.3808890140877903,
+      "gripper_sign_flips": 2,
+      "jsonl_path": "experiments/day24_ten_task_screen/task3/state0/ckptday22_s13999_screen_task3_state0.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task3/state0/ckptday22_s13999_screen_task3_state0.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task3/state0/client.log"
+    },
+    {
+      "task": 3,
+      "state": 1,
+      "success": true,
+      "task_description": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 43,
+      "executed_policy_steps": 213,
+      "last_environment_step": 222,
+      "eef_movement_l2": 0.3858723166376126,
+      "final_eef_pos": [
+        0.027350082497696666,
+        0.18525369245991832,
+        0.9561611755346413
+      ],
+      "final_gripper_qpos": [
+        0.03390017144759369,
+        -0.04000405789816883
+      ],
+      "mean_action_l2": 1.139357821445818,
+      "max_action_l2": 1.334219572371913,
+      "gripper_sign_flips": 2,
+      "jsonl_path": "experiments/day24_ten_task_screen/task3/state1/ckptday22_s13999_screen_task3_state1.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task3/state1/ckptday22_s13999_screen_task3_state1.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task3/state1/client.log"
+    },
+    {
+      "task": 3,
+      "state": 2,
+      "success": true,
+      "task_description": "put the black bowl in the bottom drawer of the cabinet and close it",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 50,
+      "executed_policy_steps": 249,
+      "last_environment_step": 258,
+      "eef_movement_l2": 0.40427733112662273,
+      "final_eef_pos": [
+        0.03430903732890331,
+        0.1835843297753804,
+        0.9236904470901008
+      ],
+      "final_gripper_qpos": [
+        0.039007075651098615,
+        -0.04000578240075642
+      ],
+      "mean_action_l2": 1.1409248415429147,
+      "max_action_l2": 1.4052441213961917,
+      "gripper_sign_flips": 2,
+      "jsonl_path": "experiments/day24_ten_task_screen/task3/state2/ckptday22_s13999_screen_task3_state2.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task3/state2/ckptday22_s13999_screen_task3_state2.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task3/state2/client.log"
+    },
+    {
+      "task": 4,
+      "state": 0,
+      "success": true,
+      "task_description": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 46,
+      "executed_policy_steps": 229,
+      "last_environment_step": 238,
+      "eef_movement_l2": 0.40829702473220564,
+      "final_eef_pos": [
+        -0.010328309812922853,
+        0.36046987896531,
+        0.5323796333442702
+      ],
+      "final_gripper_qpos": [
+        0.005365214458067306,
+        -0.005227670050776187
+      ],
+      "mean_action_l2": 1.1582686301866982,
+      "max_action_l2": 1.350441875955782,
+      "gripper_sign_flips": 3,
+      "jsonl_path": "experiments/day24_ten_task_screen/task4/state0/ckptday22_s13999_screen_task4_state0.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task4/state0/ckptday22_s13999_screen_task4_state0.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task4/state0/client.log"
+    },
+    {
+      "task": 4,
+      "state": 1,
+      "success": true,
+      "task_description": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 42,
+      "executed_policy_steps": 207,
+      "last_environment_step": 216,
+      "eef_movement_l2": 0.3799001995523912,
+      "final_eef_pos": [
+        -0.008298472794688014,
+        0.3308397565966689,
+        0.5285561175708604
+      ],
+      "final_gripper_qpos": [
+        0.0051196764855260535,
+        -0.005049706113834131
+      ],
+      "mean_action_l2": 1.1509660025953863,
+      "max_action_l2": 1.4583744529445934,
+      "gripper_sign_flips": 3,
+      "jsonl_path": "experiments/day24_ten_task_screen/task4/state1/ckptday22_s13999_screen_task4_state1.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task4/state1/ckptday22_s13999_screen_task4_state1.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task4/state1/client.log"
+    },
+    {
+      "task": 4,
+      "state": 2,
+      "success": true,
+      "task_description": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 45,
+      "executed_policy_steps": 223,
+      "last_environment_step": 232,
+      "eef_movement_l2": 0.3454449893090002,
+      "final_eef_pos": [
+        -0.021335990309336993,
+        0.31793403810848186,
+        0.5237312275057313
+      ],
+      "final_gripper_qpos": [
+        0.004598378794327128,
+        -0.006413088839842118
+      ],
+      "mean_action_l2": 1.1567899393310817,
+      "max_action_l2": 1.3727419849273321,
+      "gripper_sign_flips": 3,
+      "jsonl_path": "experiments/day24_ten_task_screen/task4/state2/ckptday22_s13999_screen_task4_state2.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task4/state2/ckptday22_s13999_screen_task4_state2.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task4/state2/client.log"
+    },
+    {
+      "task": 5,
+      "state": 0,
+      "success": true,
+      "task_description": "pick up the book and place it in the back compartment of the caddy",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 38,
+      "executed_policy_steps": 187,
+      "last_environment_step": 196,
+      "eef_movement_l2": 0.266931123901216,
+      "final_eef_pos": [
+        -0.4229380161052112,
+        -0.20157056718541724,
+        1.084530370177407
+      ],
+      "final_gripper_qpos": [
+        0.01683800482247683,
+        -0.014533975054314216
+      ],
+      "mean_action_l2": 1.1754140378156859,
+      "max_action_l2": 1.631840623380926,
+      "gripper_sign_flips": 1,
+      "jsonl_path": "experiments/day24_ten_task_screen/task5/state0/ckptday22_s13999_screen_task5_state0.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task5/state0/ckptday22_s13999_screen_task5_state0.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task5/state0/client.log"
+    },
+    {
+      "task": 5,
+      "state": 1,
+      "success": true,
+      "task_description": "pick up the book and place it in the back compartment of the caddy",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 36,
+      "executed_policy_steps": 180,
+      "last_environment_step": 189,
+      "eef_movement_l2": 0.1870336953290018,
+      "final_eef_pos": [
+        -0.3851099402993145,
+        -0.14258602483858432,
+        1.1014613435607492
+      ],
+      "final_gripper_qpos": [
+        0.013903623255294623,
+        -0.015729962699180672
+      ],
+      "mean_action_l2": 1.1182322185194724,
+      "max_action_l2": 1.4029423905828151,
+      "gripper_sign_flips": 1,
+      "jsonl_path": "experiments/day24_ten_task_screen/task5/state1/ckptday22_s13999_screen_task5_state1.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task5/state1/ckptday22_s13999_screen_task5_state1.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task5/state1/client.log"
+    },
+    {
+      "task": 5,
+      "state": 2,
+      "success": false,
+      "task_description": "pick up the book and place it in the back compartment of the caddy",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 104,
+      "executed_policy_steps": 520,
+      "last_environment_step": 529,
+      "eef_movement_l2": 0.2932341192585031,
+      "final_eef_pos": [
+        -0.42842492112771957,
+        -0.24955738646176065,
+        1.0621762707422
+      ],
+      "final_gripper_qpos": [
+        0.0007705353659471135,
+        -0.006121713791971576
+      ],
+      "mean_action_l2": 1.190007104320562,
+      "max_action_l2": 1.6371914446168976,
+      "gripper_sign_flips": 22,
+      "jsonl_path": "experiments/day24_ten_task_screen/task5/state2/ckptday22_s13999_screen_task5_state2.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task5/state2/ckptday22_s13999_screen_task5_state2.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task5/state2/client.log"
+    },
+    {
+      "task": 6,
+      "state": 0,
+      "success": true,
+      "task_description": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 89,
+      "executed_policy_steps": 442,
+      "last_environment_step": 451,
+      "eef_movement_l2": 0.31496933310837577,
+      "final_eef_pos": [
+        0.06401414053393813,
+        0.13530328647832532,
+        0.4481745914272831
+      ],
+      "final_gripper_qpos": [
+        0.03329136739543828,
+        -0.013030534966934064
+      ],
+      "mean_action_l2": 1.0852056468989664,
+      "max_action_l2": 1.4068218294826622,
+      "gripper_sign_flips": 3,
+      "jsonl_path": "experiments/day24_ten_task_screen/task6/state0/ckptday22_s13999_screen_task6_state0.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task6/state0/ckptday22_s13999_screen_task6_state0.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task6/state0/client.log"
+    },
+    {
+      "task": 6,
+      "state": 1,
+      "success": true,
+      "task_description": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 50,
+      "executed_policy_steps": 247,
+      "last_environment_step": 256,
+      "eef_movement_l2": 0.23364843867465035,
+      "final_eef_pos": [
+        0.05570412947282809,
+        0.11463340415142256,
+        0.5056987850746879
+      ],
+      "final_gripper_qpos": [
+        0.006679376817149996,
+        -0.006939945650540056
+      ],
+      "mean_action_l2": 1.1169687894259732,
+      "max_action_l2": 1.44447902749495,
+      "gripper_sign_flips": 5,
+      "jsonl_path": "experiments/day24_ten_task_screen/task6/state1/ckptday22_s13999_screen_task6_state1.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task6/state1/ckptday22_s13999_screen_task6_state1.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task6/state1/client.log"
+    },
+    {
+      "task": 6,
+      "state": 2,
+      "success": true,
+      "task_description": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 48,
+      "executed_policy_steps": 237,
+      "last_environment_step": 246,
+      "eef_movement_l2": 0.28715911630403174,
+      "final_eef_pos": [
+        0.07642370634944497,
+        0.12702816094037428,
+        0.47664175333816816
+      ],
+      "final_gripper_qpos": [
+        0.01842300662516062,
+        -0.028152907064146793
+      ],
+      "mean_action_l2": 1.1279002174187818,
+      "max_action_l2": 1.3931816957088348,
+      "gripper_sign_flips": 5,
+      "jsonl_path": "experiments/day24_ten_task_screen/task6/state2/ckptday22_s13999_screen_task6_state2.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task6/state2/ckptday22_s13999_screen_task6_state2.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task6/state2/client.log"
+    },
+    {
+      "task": 7,
+      "state": 0,
+      "success": true,
+      "task_description": "put both the alphabet soup and the cream cheese box in the basket",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 54,
+      "executed_policy_steps": 267,
+      "last_environment_step": 276,
+      "eef_movement_l2": 0.24457677108658513,
+      "final_eef_pos": [
+        -0.02272757919822144,
+        0.25080369798283425,
+        0.6153980120370957
+      ],
+      "final_gripper_qpos": [
+        0.02660066188176498,
+        -0.026435107765302005
+      ],
+      "mean_action_l2": 1.1859263426552116,
+      "max_action_l2": 1.619341021535385,
+      "gripper_sign_flips": 12,
+      "jsonl_path": "experiments/day24_ten_task_screen/task7/state0/ckptday22_s13999_screen_task7_state0.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task7/state0/ckptday22_s13999_screen_task7_state0.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task7/state0/client.log"
+    },
+    {
+      "task": 7,
+      "state": 1,
+      "success": true,
+      "task_description": "put both the alphabet soup and the cream cheese box in the basket",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 87,
+      "executed_policy_steps": 432,
+      "last_environment_step": 441,
+      "eef_movement_l2": 0.28525280667855046,
+      "final_eef_pos": [
+        0.014923547505401416,
+        0.2768899133651008,
+        0.6151253613281162
+      ],
+      "final_gripper_qpos": [
+        0.026584853232667547,
+        -0.026420822459728287
+      ],
+      "mean_action_l2": 1.1866295569143432,
+      "max_action_l2": 1.5534096555227146,
+      "gripper_sign_flips": 14,
+      "jsonl_path": "experiments/day24_ten_task_screen/task7/state1/ckptday22_s13999_screen_task7_state1.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task7/state1/ckptday22_s13999_screen_task7_state1.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task7/state1/client.log"
+    },
+    {
+      "task": 7,
+      "state": 2,
+      "success": true,
+      "task_description": "put both the alphabet soup and the cream cheese box in the basket",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 48,
+      "executed_policy_steps": 238,
+      "last_environment_step": 247,
+      "eef_movement_l2": 0.25012163701049056,
+      "final_eef_pos": [
+        -0.013547257816338844,
+        0.25102026592794147,
+        0.6191069173909739
+      ],
+      "final_gripper_qpos": [
+        0.026591596143766397,
+        -0.02639367219773288
+      ],
+      "mean_action_l2": 1.2051403683139426,
+      "max_action_l2": 1.6453473642543275,
+      "gripper_sign_flips": 6,
+      "jsonl_path": "experiments/day24_ten_task_screen/task7/state2/ckptday22_s13999_screen_task7_state2.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task7/state2/ckptday22_s13999_screen_task7_state2.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task7/state2/client.log"
+    },
+    {
+      "task": 8,
+      "state": 0,
+      "success": false,
+      "task_description": "put both moka pots on the stove",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 104,
+      "executed_policy_steps": 520,
+      "last_environment_step": 529,
+      "eef_movement_l2": 0.1905440469395595,
+      "final_eef_pos": [
+        -0.09988123000436533,
+        0.13111182738601396,
+        1.0706869946458868
+      ],
+      "final_gripper_qpos": [
+        0.04000925213195945,
+        -0.03957425480661514
+      ],
+      "mean_action_l2": 1.1283630184174454,
+      "max_action_l2": 1.413625364725419,
+      "gripper_sign_flips": 6,
+      "jsonl_path": "experiments/day24_ten_task_screen/task8/state0/ckptday22_s13999_screen_task8_state0.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task8/state0/ckptday22_s13999_screen_task8_state0.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task8/state0/client.log"
+    },
+    {
+      "task": 8,
+      "state": 1,
+      "success": false,
+      "task_description": "put both moka pots on the stove",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 104,
+      "executed_policy_steps": 520,
+      "last_environment_step": 529,
+      "eef_movement_l2": 0.3951208843545612,
+      "final_eef_pos": [
+        -0.24688320492578605,
+        0.2934090331842192,
+        0.9159036597810878
+      ],
+      "final_gripper_qpos": [
+        0.011003833397796484,
+        -0.010755777611228055
+      ],
+      "mean_action_l2": 1.0609752791311788,
+      "max_action_l2": 1.3087316527740884,
+      "gripper_sign_flips": 26,
+      "jsonl_path": "experiments/day24_ten_task_screen/task8/state1/ckptday22_s13999_screen_task8_state1.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task8/state1/ckptday22_s13999_screen_task8_state1.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task8/state1/client.log"
+    },
+    {
+      "task": 8,
+      "state": 2,
+      "success": false,
+      "task_description": "put both moka pots on the stove",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 104,
+      "executed_policy_steps": 520,
+      "last_environment_step": 529,
+      "eef_movement_l2": 0.36635563815414457,
+      "final_eef_pos": [
+        0.12020670816948215,
+        0.0005635674525175799,
+        1.0141201727473064
+      ],
+      "final_gripper_qpos": [
+        0.0327370754139358,
+        -0.02872805411733968
+      ],
+      "mean_action_l2": 1.0255238683331898,
+      "max_action_l2": 1.2072024819119813,
+      "gripper_sign_flips": 13,
+      "jsonl_path": "experiments/day24_ten_task_screen/task8/state2/ckptday22_s13999_screen_task8_state2.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task8/state2/ckptday22_s13999_screen_task8_state2.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task8/state2/client.log"
+    },
+    {
+      "task": 9,
+      "state": 0,
+      "success": true,
+      "task_description": "put the yellow and white mug in the microwave and close it",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 51,
+      "executed_policy_steps": 252,
+      "last_environment_step": 261,
+      "eef_movement_l2": 0.2444748141308006,
+      "final_eef_pos": [
+        -0.21241845234031057,
+        0.20377766701644723,
+        1.0382635475076119
+      ],
+      "final_gripper_qpos": [
+        0.0398545613362312,
+        -0.039999960726692534
+      ],
+      "mean_action_l2": 1.1440376391407654,
+      "max_action_l2": 1.4672495583945615,
+      "gripper_sign_flips": 8,
+      "jsonl_path": "experiments/day24_ten_task_screen/task9/state0/ckptday22_s13999_screen_task9_state0.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task9/state0/ckptday22_s13999_screen_task9_state0.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task9/state0/client.log"
+    },
+    {
+      "task": 9,
+      "state": 1,
+      "success": false,
+      "task_description": "put the yellow and white mug in the microwave and close it",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 104,
+      "executed_policy_steps": 520,
+      "last_environment_step": 529,
+      "eef_movement_l2": 0.40412401320571123,
+      "final_eef_pos": [
+        0.06745315523762403,
+        0.1383541425181706,
+        0.9147934527252616
+      ],
+      "final_gripper_qpos": [
+        0.03994559503460129,
+        -0.03982387283375559
+      ],
+      "mean_action_l2": 1.1205088425756313,
+      "max_action_l2": 1.356206281211687,
+      "gripper_sign_flips": 2,
+      "jsonl_path": "experiments/day24_ten_task_screen/task9/state1/ckptday22_s13999_screen_task9_state1.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task9/state1/ckptday22_s13999_screen_task9_state1.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task9/state1/client.log"
+    },
+    {
+      "task": 9,
+      "state": 2,
+      "success": true,
+      "task_description": "put the yellow and white mug in the microwave and close it",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 54,
+      "executed_policy_steps": 270,
+      "last_environment_step": 279,
+      "eef_movement_l2": 0.24187331778371043,
+      "final_eef_pos": [
+        -0.1446312405445459,
+        0.1605936409920053,
+        1.0068371510360985
+      ],
+      "final_gripper_qpos": [
+        0.040011445729903054,
+        -0.039750073263079375
+      ],
+      "mean_action_l2": 1.172664373135797,
+      "max_action_l2": 1.443962202412501,
+      "gripper_sign_flips": 8,
+      "jsonl_path": "experiments/day24_ten_task_screen/task9/state2/ckptday22_s13999_screen_task9_state2.jsonl",
+      "video_path": "experiments/day24_ten_task_screen/task9/state2/ckptday22_s13999_screen_task9_state2.mp4",
+      "client_log_path": "experiments/day24_ten_task_screen/task9/state2/client.log"
+    }
+  ]
+}

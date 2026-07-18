@@ -1,0 +1,74 @@
+[
+  {
+    "state": 2,
+    "directory": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair02/order1_state2",
+    "x_margin_mm": -112.101,
+    "y_margin_mm": 59.474,
+    "z_margin_mm": 50.35,
+    "axis_pass": {
+      "x": false,
+      "y": true,
+      "z": true
+    },
+    "book_world_pos": [
+      -0.29020434549602186,
+      -0.13059918635310325,
+      0.9524698430399996
+    ],
+    "video": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair02/order1_state2/ckptrobust_p02_o1_s2_task5_state2.mp4"
+  },
+  {
+    "state": 2,
+    "directory": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair03/order2_state2",
+    "x_margin_mm": -93.254,
+    "y_margin_mm": 26.122,
+    "z_margin_mm": 44.077,
+    "axis_pass": {
+      "x": false,
+      "y": true,
+      "z": true
+    },
+    "book_world_pos": [
+      -0.30905118507481333,
+      -0.1693232859261131,
+      0.9461974517285869
+    ],
+    "video": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair03/order2_state2/ckptrobust_p03_o2_s2_task5_state2.mp4"
+  },
+  {
+    "state": 0,
+    "directory": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair04/order2_state0",
+    "x_margin_mm": -91.88,
+    "y_margin_mm": 54.294,
+    "z_margin_mm": 63.743,
+    "axis_pass": {
+      "x": false,
+      "y": true,
+      "z": true
+    },
+    "book_world_pos": [
+      -0.3104252229681262,
+      -0.14115110982277346,
+      0.9692973271990224
+    ],
+    "video": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair04/order2_state0/ckptrobust_p04_o2_s0_task5_state0.mp4"
+  },
+  {
+    "state": 2,
+    "directory": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair09/order2_state2",
+    "x_margin_mm": -3.148,
+    "y_margin_mm": -50.503,
+    "z_margin_mm": 5.897,
+    "axis_pass": {
+      "x": false,
+      "y": false,
+      "z": true
+    },
+    "book_world_pos": [
+      -0.399157028284018,
+      -0.24594852798889227,
+      1.0271427946480425
+    ],
+    "video": "experiments/day24_controlled_robustness/task5_state0_vs_state2/pair09/order2_state2/ckptrobust_p09_o2_s2_task5_state2.mp4"
+  }
+]

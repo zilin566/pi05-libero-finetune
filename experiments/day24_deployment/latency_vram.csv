@@ -1,0 +1,20 @@
+metric,value,unit,notes
+checkpoint_config,pi05_libero_day22_bs4_e2,,
+checkpoint_step,13999,step,
+hardware,NVIDIA GeForce RTX 5090,,
+precision,bfloat16,,Confirmed from actual Pi0Config
+policy_batch_size,1,observation,Single-environment online inference
+model_internal_action_dim,32,dimensions,Unified padded Pi0 action representation
+environment_action_dim,7,dimensions,LIBERO action passed to env.step
+returned_action_chunk_shape,10x7,,Horizon x LIBERO action dimension
+replan_steps,5,environment steps,Execute five actions before querying again
+fresh_query_count,35,queries,One cold-start query plus steady queries
+cold_start_first_query,24850.52541270852,ms,Includes fresh-server JAX compilation
+steady_query_count,34,queries,Cold-start query excluded
+steady_mean_latency,83.24585855007172,ms,Monitored fresh-server rollout
+steady_p50_latency,81.18296228349209,ms,Monitored fresh-server rollout
+steady_p95_latency,99.90090075880289,ms,Monitored fresh-server rollout
+gpu_baseline,0.0,MiB,No competing GPU compute process
+loaded_idle_resident_vram,24617.0,MiB,24.040 GiB total observed
+observed_peak_vram,24693.0,MiB,24.114 GiB; sampled with nvidia-smi at approximately 200 ms intervals
+peak_over_resident,76.0,MiB,Temporary increase during rollout/JIT

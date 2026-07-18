@@ -1,0 +1,139 @@
+{
+  "checkpoint_config": "pi05_libero_day22_bs4_e2",
+  "checkpoint_step": 13999,
+  "task_suite": "libero_10",
+  "task_id": 1,
+  "evaluated_states": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "successes": 7,
+  "trials": 7,
+  "success_rate": 1.0,
+  "records": [
+    {
+      "state": 3,
+      "success": true,
+      "task_description": "put both the cream cheese box and the butter in the basket",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 51,
+      "executed_policy_steps": 251,
+      "last_environment_step": 260,
+      "eef_movement_l2": 0.2736691020288756,
+      "final_eef_pos": [
+        -0.04472224634396933,
+        0.2532387784981629,
+        0.5952031456963064
+      ],
+      "log_path": "experiments/day24_task1_eval/state3/ckptday22_s13999_task1_state3.jsonl"
+    },
+    {
+      "state": 4,
+      "success": true,
+      "task_description": "put both the cream cheese box and the butter in the basket",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 48,
+      "executed_policy_steps": 237,
+      "last_environment_step": 246,
+      "eef_movement_l2": 0.2837021598429575,
+      "final_eef_pos": [
+        -0.020783201805021637,
+        0.25943284916881343,
+        0.6292644559854823
+      ],
+      "log_path": "experiments/day24_task1_eval/state4/ckptday22_s13999_task1_state4.jsonl"
+    },
+    {
+      "state": 5,
+      "success": true,
+      "task_description": "put both the cream cheese box and the butter in the basket",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 46,
+      "executed_policy_steps": 229,
+      "last_environment_step": 238,
+      "eef_movement_l2": 0.3046901439385528,
+      "final_eef_pos": [
+        -0.02461086848085902,
+        0.29400283316193376,
+        0.6185860779204984
+      ],
+      "log_path": "experiments/day24_task1_eval/state5/ckptday22_s13999_task1_state5.jsonl"
+    },
+    {
+      "state": 6,
+      "success": true,
+      "task_description": "put both the cream cheese box and the butter in the basket",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 46,
+      "executed_policy_steps": 227,
+      "last_environment_step": 236,
+      "eef_movement_l2": 0.2580359774855556,
+      "final_eef_pos": [
+        -0.0402963913011493,
+        0.2450704073107183,
+        0.6037414551688396
+      ],
+      "log_path": "experiments/day24_task1_eval/state6/ckptday22_s13999_task1_state6.jsonl"
+    },
+    {
+      "state": 7,
+      "success": true,
+      "task_description": "put both the cream cheese box and the butter in the basket",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 50,
+      "executed_policy_steps": 249,
+      "last_environment_step": 258,
+      "eef_movement_l2": 0.28709403093754754,
+      "final_eef_pos": [
+        -0.0031200585011187595,
+        0.27245525380699853,
+        0.6166697514100061
+      ],
+      "log_path": "experiments/day24_task1_eval/state7/ckptday22_s13999_task1_state7.jsonl"
+    },
+    {
+      "state": 8,
+      "success": true,
+      "task_description": "put both the cream cheese box and the butter in the basket",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 49,
+      "executed_policy_steps": 242,
+      "last_environment_step": 251,
+      "eef_movement_l2": 0.28929813729692017,
+      "final_eef_pos": [
+        -0.020285128175144992,
+        0.27564070442085,
+        0.5961842659439269
+      ],
+      "log_path": "experiments/day24_task1_eval/state8/ckptday22_s13999_task1_state8.jsonl"
+    },
+    {
+      "state": 9,
+      "success": true,
+      "task_description": "put both the cream cheese box and the butter in the basket",
+      "environment_seed": 7,
+      "replan_steps": 5,
+      "policy_query_count": 51,
+      "executed_policy_steps": 251,
+      "last_environment_step": 260,
+      "eef_movement_l2": 0.3000249432417486,
+      "final_eef_pos": [
+        -0.021210634060267568,
+        0.2737797560053113,
+        0.6115598557765367
+      ],
+      "log_path": "experiments/day24_task1_eval/state9/ckptday22_s13999_task1_state9.jsonl"
+    }
+  ]
+}

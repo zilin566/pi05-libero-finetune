@@ -563,20 +563,56 @@ Clean / Dirty 使用相同 norm stats
 
 ![](experiments/day18_summary/norm_dirty_loss.png)
 
+
 ### 12.4 Reproduce
 
-```bash
-# 训练（切换数据子集 / normalization 开关 / dirty 数据对应不同消融组）
-uv run python scripts/training/train_ablation.py \
-  --config-name pi05_libero_debug_lora \
-  --exp-name <run_name>
+训练需要在安装了 openpi 依赖的源仓库环境中执行。本仓库保存 Day 18 的实验配置快照、数据构建脚本、No-Norm 训练入口和统一离线评测脚本。
 
-# 统一原始动作空间离线评测（含反归一化）
-uv run python scripts/evaluation/eval_action_l2.py --ckpt <checkpoint_path>
-uv run python scripts/evaluation/compare_action_l2.py
+对应实验配置：
+
+```text
+pi05_libero_day18_n50_s100
+pi05_libero_day18_n50_dirty_s100
+pi05_libero_day18_n50_nonorm_s100
 ```
 
----
+Norm 与 Dirty-Norm 实验使用 openpi 标准训练入口：
+
+```bash
+cd /path/to/openpi
+
+uv run python scripts/train.py \
+  pi05_libero_day18_n50_s100 \
+  --exp-name day18_n50_clean
+
+uv run python scripts/train.py \
+  pi05_libero_day18_n50_dirty_s100 \
+  --exp-name day18_n50_dirty
+```
+
+No-Norm 实验使用本仓库提供的训练入口：
+
+```bash
+PROJECT_REPO=/path/to/pi05-libero-finetune
+cd /path/to/openpi
+
+uv run python "$PROJECT_REPO/scripts/training/train_nonorm.py" \
+  pi05_libero_day18_n50_nonorm_s100 \
+  --exp-name day18_n50_nonorm
+```
+
+统一原始动作空间离线评测：
+
+```bash
+PROJECT_REPO=/path/to/pi05-libero-finetune
+
+uv run python "$PROJECT_REPO/scripts/evaluation/eval_action_l2.py" \
+  --ckpt <checkpoint_path>
+
+uv run python "$PROJECT_REPO/scripts/evaluation/compare_action_l2.py"
+```
+
+> `/path/to/openpi`、`/path/to/pi05-libero-finetune` 和 `<checkpoint_path>` 都是需要根据实际环境替换的占位路径，不应原样执行。
 
 ## 13. Raw-Action-Space Evaluation
 

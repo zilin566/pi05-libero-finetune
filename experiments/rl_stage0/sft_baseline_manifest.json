@@ -1,0 +1,157 @@
+{
+  "manifest_version": "1.0",
+  "status": "frozen",
+  "created_date": "2026-07-18",
+  "project": "openpi_pi05_libero_finetune",
+  "stage": "RL Stage 0 - SFT baseline freeze",
+  "baseline_policy": {
+    "config_name": "pi05_libero_day22_bs4_e2",
+    "checkpoint_step": 13999,
+    "configured_train_steps": 14000,
+    "checkpoint_path_relative_to_openpi": "checkpoints/pi05_libero_day22_bs4_e2/day22_bs4_e2/13999",
+    "checkpoint_size_human": "8.9G",
+    "initialization": "pi05_base",
+    "inference_precision": "bfloat16",
+    "checkpoint_artifacts": {
+      "params_present": true,
+      "train_state_present": true,
+      "checkpoint_metadata_present": true,
+      "params_manifest": "params/manifest.ocdbt",
+      "train_state_manifest": "train_state/manifest.ocdbt"
+    }
+  },
+  "training": {
+    "dataset": "physical-intelligence/libero_day18_n100",
+    "batch_size": 4,
+    "epoch_coverage": 2.02,
+    "final_training_loss": 0.0089,
+    "action_horizon": 10,
+    "libero_action_dimension": 7
+  },
+  "normalization": {
+    "type": "quantile",
+    "checkpoint_copy_path": "checkpoints/pi05_libero_day22_bs4_e2/day22_bs4_e2/13999/assets/physical-intelligence/libero_day18_n100/norm_stats.json",
+    "training_asset_path": "assets/pi05_libero_day22_bs4_e2/physical-intelligence/libero_day18_n100/norm_stats.json",
+    "sha256": "20295a1866ae64d5dad038a462f490a79007f4c6585d2d0e05e09789fc551a11",
+    "checkpoint_and_training_asset_hash_match": true,
+    "note": "The checkpoint-embedded norm stats are the authoritative copy for this frozen baseline."
+  },
+  "runtime_protocol": {
+    "task_suite": "libero_10",
+    "environment_seed": 7,
+    "replan_steps": 5,
+    "max_policy_steps": 520,
+    "policy_batch_size": 1,
+    "model_internal_action_dimension": 32,
+    "returned_action_chunk_shape": [
+      10,
+      7
+    ],
+    "policy_rng_cli_exposed": false
+  },
+  "offline_baseline": {
+    "validation_episodes": "50-59",
+    "samples_per_episode": 3,
+    "total_observations": 30,
+    "noise_seed": 2026,
+    "raw_action_space_action_l2": 0.4371,
+    "gripper_sign_accuracy": 0.89
+  },
+  "closed_loop_baselines": {
+    "task1_states_0_9": {
+      "task_text": "put both the cream cheese box and the butter in the basket",
+      "successes": 10,
+      "trials": 10
+    },
+    "task5_states_0_9": {
+      "task_text": "pick up the book and place it in the back compartment of the caddy",
+      "successes": 9,
+      "trials": 10
+    },
+    "libero10_three_state_per_task_screening": {
+      "successes": 25,
+      "trials": 30,
+      "official_benchmark": false
+    },
+    "task8_states_0_2": {
+      "task_text": "put both moka pots on the stove",
+      "successes": 0,
+      "trials": 3
+    },
+    "task5_controlled_robustness": {
+      "state0": {
+        "successes": 9,
+        "trials": 10
+      },
+      "state2": {
+        "successes": 7,
+        "trials": 10
+      }
+    }
+  },
+  "deployment_baseline": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "cold_start_first_query_ms": 24850.525,
+    "steady_state_mean_ms": 83.246,
+    "steady_state_p50_ms": 81.183,
+    "steady_state_p95_ms": 99.901,
+    "loaded_idle_resident_vram_gib": 24.04,
+    "observed_sampled_peak_vram_gib": 24.114
+  },
+  "rl_target": {
+    "task_id": 8,
+    "task_text": "put both moka pots on the stove",
+    "training_initial_states": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "held_out_initial_states": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "guard_tasks": {
+    "task1_initial_states": [
+      0,
+      1,
+      2
+    ],
+    "task5_initial_states": [
+      0,
+      1,
+      2
+    ]
+  },
+  "frozen_components": [
+    "SFT baseline checkpoint",
+    "checkpoint-embedded normalization statistics",
+    "action output transform",
+    "rollout script",
+    "success predicates",
+    "environment seed",
+    "replan_steps",
+    "max_policy_steps",
+    "offline validation observations",
+    "offline inference noise seed",
+    "evaluation initial states"
+  ],
+  "repository": {
+    "repository": "zilin566/pi05-libero-finetune",
+    "git_commit": "8d3e09e2613ca325c8d7091db35e884d94df6a74",
+    "git_commit_short": "8d3e09e",
+    "git_commit_message": "docs: add six rollout demo GIFs"
+  },
+  "safety_rules": {
+    "do_not_overwrite_baseline_checkpoint": true,
+    "rl_outputs_must_use_new_checkpoint_directory": true,
+    "do_not_modify_frozen_norm_stats": true,
+    "report_task8_training_and_held_out_results_separately": true,
+    "evaluate_guard_tasks_after_each_rl_candidate": true
+  }
+}

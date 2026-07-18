@@ -30,7 +30,15 @@ LIBERO 数据理解
 
 > `25/30` 是每任务三个初始状态的覆盖筛查结果，不是官方 LIBERO-10 benchmark 成功率。
 
+## Documentation
+
+- [Evaluation Protocol](docs/eval_protocol.md)
+- [Failure Distribution](docs/failure_distribution.md)
+- [Deployment Note](docs/deployment_note.md)
+- [Representative Rollout Videos](docs/media/day24/README.md)
+
 ---
+
 
 ## 1. Project Goal
 
@@ -55,8 +63,6 @@ LIBERO 数据理解
 - 失败分布、受控鲁棒性和 success predicate 分析
 - bf16 推理延迟、显存测量与部署记录
 - 实验日志、图表和技术结论整理
-
----
 
 ## 2. Data Pipeline
 
@@ -653,6 +659,10 @@ scripts/evaluation/compare_action_l2.py
 
 ## 14. Closed-Loop Rollout Evaluation
 
+完整评测条件、随机性说明和报告规则见：
+
+- [Evaluation Protocol](docs/eval_protocol.md)
+
 ### 14.1 Evaluation Protocol
 
 正式闭环评测固定使用：
@@ -824,6 +834,10 @@ minimum z margin = 0.412 mm
 
 state 2 的观察成功率更低，但置信区间明显重叠，因此当前数据只支持“初始状态敏感性”的初步证据，不支持统计显著性结论。
 
+完整失败标签、逐任务诊断和分析限制见：
+
+- [Failure Distribution](docs/failure_distribution.md)
+
 ---
 
 ## 16. bf16 Deployment Metrics
@@ -870,7 +884,8 @@ Fresh-server rollout 共包含 35 次 policy query：
 
 详细记录：
 
-- [Deployment note](experiments/day24_deployment/deployment_note.md)
+- [Formal deployment note](docs/deployment_note.md)
+- [Raw deployment experiment record](experiments/day24_deployment/deployment_note.md)
 - [Latency and VRAM CSV](experiments/day24_deployment/latency_vram.csv)
 - [Representative rollout videos](docs/media/day24/README.md)
 
@@ -891,6 +906,9 @@ pi05-libero-finetune/
 ├── docs/
 │   ├── data_format.md
 │   ├── norm_stats_note.md
+│   ├── eval_protocol.md
+│   ├── failure_distribution.md
+│   ├── deployment_note.md
 │   ├── vla_dataset_survey.md
 │   ├── vla_model_survey_update.md
 │   └── media/
@@ -948,7 +966,9 @@ SFT 主线已经完成：
 
 - [x] 完成 README 可展示版本与 6 条代表性 MP4
 - [ ] 制作 README 首页 GIF
-- [ ] 整理 eval、failure 和 deployment 三份正式文档
+- [x] 完成正式评测协议文档
+- [x] 完成失败分布文档
+- [x] 完成部署说明文档
 - [ ] 冻结 step 13,999 SFT baseline
 - [ ] 审计 openpi 的 RL / preference-training 支持
 - [ ] 读取 Task 8 BDDL 并设计 reward v0

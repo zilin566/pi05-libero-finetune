@@ -1,0 +1,139 @@
+{
+  "protocol": {
+    "suite": "libero_10",
+    "task_id": 5,
+    "initial_states": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "environment_seed": 7,
+    "replan_steps": 5,
+    "max_policy_steps": 520
+  },
+  "summaries": [
+    {
+      "policy": "official",
+      "successes": 10,
+      "total": 10,
+      "success_rate": 1.0,
+      "wilson_95_lower": 0.7224672001371107,
+      "wilson_95_upper": 0.9999999999999999
+    },
+    {
+      "policy": "old_5k",
+      "successes": 0,
+      "total": 10,
+      "success_rate": 0.0,
+      "wilson_95_lower": 0.0,
+      "wilson_95_upper": 0.2775327998628892
+    },
+    {
+      "policy": "second_round_13999",
+      "successes": 9,
+      "total": 10,
+      "success_rate": 0.9,
+      "wilson_95_lower": 0.5958499732047615,
+      "wilson_95_upper": 0.9821237869049271
+    }
+  ],
+  "paired_states": [
+    {
+      "state": 0,
+      "official": "SUCCESS",
+      "official_eef_movement_l2": 0.19116416239678363,
+      "old_5k": "FAIL",
+      "old_5k_eef_movement_l2": 0.16091933018540627,
+      "second_round_13999": "FAIL",
+      "second_round_13999_eef_movement_l2": 0.6948003564084331
+    },
+    {
+      "state": 1,
+      "official": "SUCCESS",
+      "official_eef_movement_l2": 0.18535131509645716,
+      "old_5k": "FAIL",
+      "old_5k_eef_movement_l2": 0.2033647511099898,
+      "second_round_13999": "SUCCESS",
+      "second_round_13999_eef_movement_l2": 0.18346955587894853
+    },
+    {
+      "state": 2,
+      "official": "SUCCESS",
+      "official_eef_movement_l2": 0.18393547564235094,
+      "old_5k": "FAIL",
+      "old_5k_eef_movement_l2": 0.16943046276391194,
+      "second_round_13999": "SUCCESS",
+      "second_round_13999_eef_movement_l2": 0.17249344698434962
+    },
+    {
+      "state": 3,
+      "official": "SUCCESS",
+      "official_eef_movement_l2": 0.2264338652667756,
+      "old_5k": "FAIL",
+      "old_5k_eef_movement_l2": 0.1950783036085074,
+      "second_round_13999": "SUCCESS",
+      "second_round_13999_eef_movement_l2": 0.1728265645331453
+    },
+    {
+      "state": 4,
+      "official": "SUCCESS",
+      "official_eef_movement_l2": 0.17820711982717308,
+      "old_5k": "FAIL",
+      "old_5k_eef_movement_l2": 0.19502429866547216,
+      "second_round_13999": "SUCCESS",
+      "second_round_13999_eef_movement_l2": 0.18581498539191246
+    },
+    {
+      "state": 5,
+      "official": "SUCCESS",
+      "official_eef_movement_l2": 0.1671620777731051,
+      "old_5k": "FAIL",
+      "old_5k_eef_movement_l2": 0.20413757333171606,
+      "second_round_13999": "SUCCESS",
+      "second_round_13999_eef_movement_l2": 0.17318343793251584
+    },
+    {
+      "state": 6,
+      "official": "SUCCESS",
+      "official_eef_movement_l2": 0.17908781230990706,
+      "old_5k": "FAIL",
+      "old_5k_eef_movement_l2": 0.1907201113083915,
+      "second_round_13999": "SUCCESS",
+      "second_round_13999_eef_movement_l2": 0.18884113361835822
+    },
+    {
+      "state": 7,
+      "official": "SUCCESS",
+      "official_eef_movement_l2": 0.1973493369273554,
+      "old_5k": "FAIL",
+      "old_5k_eef_movement_l2": 0.19148570937064305,
+      "second_round_13999": "SUCCESS",
+      "second_round_13999_eef_movement_l2": 0.20855746996142002
+    },
+    {
+      "state": 8,
+      "official": "SUCCESS",
+      "official_eef_movement_l2": 0.1915542893069687,
+      "old_5k": "FAIL",
+      "old_5k_eef_movement_l2": 0.20840595402498752,
+      "second_round_13999": "SUCCESS",
+      "second_round_13999_eef_movement_l2": 0.21296074250062744
+    },
+    {
+      "state": 9,
+      "official": "SUCCESS",
+      "official_eef_movement_l2": 0.1954316775296395,
+      "old_5k": "FAIL",
+      "old_5k_eef_movement_l2": 0.21562591374133958,
+      "second_round_13999": "SUCCESS",
+      "second_round_13999_eef_movement_l2": 0.19228256516038486
+    }
+  ]
+}

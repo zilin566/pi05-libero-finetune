@@ -1,0 +1,35 @@
+{
+  "schema_version": "readme_figures_v1",
+  "figures": {
+    "training_loss": {
+      "metrics": {
+        "source": "experiments/day22_second_sft/train.log",
+        "source_sha256": "b9b7a98748caf3671716f2a8b84691d0057abb88f86f61bbebc7d7b22de4bded",
+        "public_loss_csv": "docs/media/readme/sft_training_loss.csv",
+        "public_loss_csv_sha256": "9f5c166809dd96e2ebb0b68902d5a39bd524000c552ae430dae6ccb34c65a3df",
+        "steps": 14000,
+        "first_loss": 0.1069,
+        "final_loss": 0.0089,
+        "first_200_mean": 0.06631499999999999,
+        "last_200_mean": 0.0153225
+      },
+      "outputs": [
+        "sft_training_loss.png",
+        "sft_training_loss.svg"
+      ]
+    },
+    "checkpoint_quality": {
+      "metrics": {
+        "source": "experiments/day23_eval/second_round_curve/second_round_curve_summary.json",
+        "source_sha256": "1c464d48d43a8e33d90d9a43466f648889628c6438b47605f6ab3c2fc4b9689c",
+        "checkpoints": 7,
+        "final_action_l2": 0.43708483847094204,
+        "final_gripper_sign_accuracy": 0.89
+      },
+      "outputs": [
+        "checkpoint_quality.png",
+        "checkpoint_quality.svg"
+      ]
+    }
+  }
+}
